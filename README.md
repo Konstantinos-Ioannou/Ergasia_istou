@@ -1,3 +1,3 @@
 #ERGASIA ISTOU
 
-Some description:
+Some description!
