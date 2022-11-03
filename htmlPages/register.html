@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+    <head>
+        <title>K COURSES</title>
+
+        <meta charset="UTF-8">
+        <meta name="language" content="Greek">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script type="text/javascript" src="../js/val.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img class="img-h" src='../assets/black1.png' width="250" height="90"  align='left'>
+            </a>
+            <span>
+                <a class="a-b" href="index.html"><img src='../assets/back1.png' width="35" height="35" align='center'></a>
+            </span>
+            <span>
+                <a class="a-h" href="index.html"><img src='../assets/home1.png' width="40" height="40" align='center'></a>
+            </span>
+        </header>
+        
+        <main>
+
+            <div class="main_flex-container-1">
+
+                <div class="main_div1">
+                    
+                    <div class="main_flex-container-2">   
+                        <h1 class="main_fBox-h1" >K Courses /</h1>
+                        <h3 class="main_fBox-h3"> <em> <strong> Εγγραφή</em></strong>
+                        </h3>
+                    </div>                
+                    
+                     <h4 class="main_h4-1">Συμπληρώστε αυτήν τη φόρμα για να δημιουργήσετε έναν λογαριασμό. </h4>
+                    
+                </div>
+                
+                <div class="main_div2">
+                    <h4 class="quotep5"><em>«A journey of a thousand miles begins with a single step»</em></h4>
+                    <h4 class="quotep5-h4">-Confucius-</h4>
+                </div>
+
+            </div>
+
+            <form action="" method="post" class="fieldset1" id="app">
+                <div>
+                    <fieldset>
+                        <legend class="legend">Προσωπικά Στοιχεία:</legend><br>
+                            <label for="fname">Όνομα:</label>
+                            <input type="text" id="fname" name="fname" required autocomplete="given-name">
+                            <label for="lname">Επώνυμο:</label>
+                            <input type="text" id="lname" name="lname" required autocomplete="family-name">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="bd">Ημερομηνία Γέννησης:</label>
+                        <input type="date" id="bd" name="bd" required autocomplete="bday">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required autocomplete="email">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="phone">Τηλέφωνο:</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" minlength="10" maxlength="10" placeholder="69********" required>
+                        <label for="sex">Φύλο:</label>
+                        <input list="sex1" id="sex" name="sex">
+                        <datalist id="sex1">
+                            <option value="Άντρας">
+                            <option value="Γύναικα">
+                            <option value="Άλλο">
+                        </datalist>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend class="legend">Στοιχεία Πληρωμής:</legend><br>
+                            <label for="cardnum">Αριθμός <br> Πιστωτικής Κάρτας:</label>
+                            <input type="text" id="cardnum" name="cardnum" autocomplete="cc-number" minlength="16" placeholder="1111-2222-3333-4444" required>
+                            <label for="cardname">Ονοματεπώνυμο <br> Κατόχου:</label>
+                            <input type="text" id="cardname" name="cardname" required autocomplete="cc-name">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="cardexp">Ημερομηνία Λήξης:</label>
+                        <input type="month" id="cardexp" name="cardexp" required autocomplete="cc-exp">
+                        <label for="cvv">CVV:</label>
+                        <input type="text" id="cvv" name="cvv" minlength="3" maxlength="3" required autocomplete="cc-csc">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend class="legend">Διεύθυνση Χρέωσης:</legend><br>
+                        <label for="address">Διεύθυνση:</label>
+                        <input type="text" id="address" name="address" placeholder="πχ. Παύλου Μελά 17" required>
+                        <label for="city">Πόλη:</label>
+                        <input type="text" id="city" name="city" placeholder="Αθήνα" required>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="municipality">Δήμος:</label>
+                        <input type="text" id="municipality" name="municipality" placeholder="πχ. Περιστέρι" required>
+                        <label for="zip">Ταχυδρομικός <br> κώδικας:</label>
+                        <input type="text" id="zip" name="zip" placeholder="πχ. 17236" required autocomplete="postal-code">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend class="legend">Στοιχεία Χρήστη:</legend><br>
+                        <label for="uname">Όνομα Χρήστη:</label>
+                        <input type="text" placeholder="Enter Username" id ="uname" name="uname" required autocomplete="username">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="psw">Κωδικός Πρόσβασης:</label>
+                        <input type="password" placeholder="Enter Password" id="psw" name="psw" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
+                        <label for="psw-repeat">Επανάλαβε <br> Κωδικό Πρόσβασης:</label>
+                        <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat" required>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend class="legend">Ερωτηματολόγιο:</legend><br>
+                        <label for="studies">Επίπεδο Σπουδών:</label>
+                        <input list="category" id="studies" name="studies" required>
+                        <datalist id="category">
+                            <option value="Απόφοιτος Λυκείου">
+                            <option value="Φοιτητής">
+                            <option value="Εργαζόμενος">
+                            <option value="Άλλο">
+                        </datalist>
+                        <label for="graduationyear">Έτος Αποφοίτησης:</label>
+                        <input type="number" id="graduationyear" name="graduationyear" placeholder="πχ. 2021">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="depst">Τμήμα Σπουδών:</label>
+                        <input type="text" id="depst" name="depst" placeholder="πχ. Πληροφορική"> 
+                        <label for="university">Πανεπιστήμιο:</label>
+                        <input type="text" id="university" name="university" placeholder="πχ. Οικονομικό Πανεπιστήμιο Αθηνών">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="direct">Κατεύθυνση Σπουδών:</label>
+                        <input type="text" id="direct" name="direction" placeholder="πχ. web development">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="knowledge"> Γνωστικά αντικείμενα: </label>
+                        <textarea rows="5" cols="55" id="knowledge" name="knowledge" placeholder="πχ. γνώση της Java, C++"></textarea>
+                        
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="skills"> Ποιά χαρακτηριστικά της προσωπικότητάς σας θέλετε να αναπτύξετε <br> μέσω των μαθημάτων μας; </label>
+                        <textarea rows="5" cols="55" id="skills" name="skills"></textarea>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="motivate"> Τι σας παρακινεί ώστε να δώσετε τον καλύτερο σας εαυτό; </label>
+                        <textarea rows="5" cols="55" id="motivate" name="motivate"></textarea>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="passion"> Πέρα από την δουλειά σας, τι άλλο σας παθιάζει; </label>
+                        <textarea rows="5" cols="55" id="passion" name="passion"></textarea>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <label for="character"> Περιγράψτε τον χαρακτήρα σας με λίγα λόγια: </label>
+                    <textarea rows="5" cols="55" id="character" name="character"></textarea>
+                    </fieldset>
+                </div>
+                <div class="help-tip">
+                    <p><br>At least 1 Uppercase, <br> At least 1 Lowercase, <br> At least 1 Number, <br> At least 1 Symbol, symbol allowed --> !@#$%^&*_=+- <br> Min 8 chars and Max 12 chars</p>
+                </div>
+                <button type="submit" class="form_button" onclick="Validate(); creditcardexp(); ValidateEmail(email)">Υποβολή</button>
+            </form>
+            
+        </main>
+        
+        <footer>
+
+            <span class="span1">
+                    <h2 class="span1-h2"><a href="contact.html" class="span1-a"> > Επικοινωνία: </a></h2>
+            </span>
+            
+            <span class="span2">
+                <h2 class="span2-h2"><a class="span2-a" href="aboutUs.html"> > Ποιοι είμαστε: </a></h2>
+            </span>
+            
+            <span class="span3">
+                <img class ="span3-img" src='../assets/dblack1.png'>
+            </span>  
+            
+            <span class="span4">
+                <h2 class="span4-h2"> > Social Media:</h2>
+            </span>
+
+            <span class="scm">
+                <a href="#" class="fa fa-facebook a-facebook"></a>
+                <a href="#" class="fa fa-twitter a-twitter"></a>
+                <a href="#" class="fa fa-instagram a-instagram" ></a>
+                <a href="#" class="fa fa-google a-google" ></a>
+            </span>
+
+        </footer>
+    </body>
+</html>
